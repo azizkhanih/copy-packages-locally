@@ -3,5 +3,5 @@
     "release": "XCOPY src dist /s /i /y /d && npm version patch --prefix",
     "publish": "npm run release && npm publish ./dist"
   },
-  "version": "0.0.4"
+  "version": "0.0.5"
 }
