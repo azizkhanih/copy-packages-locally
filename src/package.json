@@ -1,14 +1,12 @@
 {
   "name": "copy-packages-locally",
-  "version": "1.0.4",
-  "description": "",
+  "version": "1.0.5",
+  "description": "Copy packages to local project",
   "author": {
     "name": "Hossein Azizkhani"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "app.js",
-  "type": "module",
   "license": "ISC"
 }

@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-copyLocally = async (destinationPathList, sourceDirectory) =>
+exports.copyLocally = async (destinationPathList, sourceDirectory) =>
 {
   let args = getArgumentTheme(destinationPathList);
   if (!args.isValidArgument)
@@ -83,4 +83,5 @@ const copyDir = (from, to) =>
   fs.cpSync(from, to, { recursive: true });
 };
 
-export { copyLocally as default };
+//TODO: check es6 module
+// export { copyLocally as default };

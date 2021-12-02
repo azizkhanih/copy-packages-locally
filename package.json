@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "release": "XCOPY src dist /s /i /y /d && npm version patch --prefix",
+    "release": "DEL dist /Q && XCOPY src dist /C /S /D /Y /I",
     "publish": "npm run release && npm publish ./dist"
   },
   "version": "0.0.6"
