@@ -85,3 +85,5 @@ const copyDir = (from, to) =>
 
 //TODO: check es6 module
 // export { copyLocally as default };
+
+// Make folders recursively.
