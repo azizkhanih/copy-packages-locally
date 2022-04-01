@@ -20,6 +20,12 @@ exports.copyLocally = async (destinationPathList, sourceDirectory) =>
   await selectedProjectList.forEach(async (item) =>
   {
     const destinationDirectory = destinationPathList[item];
+
+    if (!fs.existsSync(destinationDirectory))
+    {
+      fs.mkdirSync(destinationDirectory, { recursive: true });
+    }
+
     await removeDir(destinationDirectory);
     const destinationRoot = path.resolve(destinationDirectory, '../');
     if (await fs.existsSync(destinationRoot))
@@ -85,5 +91,3 @@ const copyDir = (from, to) =>
 
 //TODO: check es6 module
 // export { copyLocally as default };
-
-// Make folders recursively.
