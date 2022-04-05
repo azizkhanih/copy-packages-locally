@@ -3,5 +3,5 @@
     "release": "DEL dist /Q && XCOPY src dist /C /S /D /Y /I",
     "publish": "npm run release && npm publish ./dist"
   },
-  "version": "1.0.6"
+  "version": "1.0.7"
 }
